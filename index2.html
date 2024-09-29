@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url('image2.jpg.jpg');
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        
+        .login-container {
+            background-color: #1f1f1f;
+            padding: 40px;
+            border-radius: 10px;
+            backdrop-filter: blur(100px);
+            box-shadow: 0px 0px 20px rgba(236, 234, 235, 0.904);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .login-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background-color: #ff3b5c;
+            transform: skewX(-15deg);
+            z-index: -1;
+        }
+        
+        h2 {
+            color: #fff;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        label {
+            color: #ccc;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            background-color: #2c2c2c;
+            color: #fff;
+            margin-bottom: 20px;
+            transition: 0.5s ease;
+        }
+        
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(238, 234, 235, 0.89);
+        }
+        
+        button {
+            background-color: rgb(172, 12, 12);
+            color: #fff;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: rgb(151, 41, 41) 0.5s ease-in;
+        }
+        
+        button:hover {
+            background-color: rgb(172, 50, 50);
+            transition: 0.7s ease;
+            border-color: 3px #fff;
+            text-shadow: 5px 5px 5px white;
+        }
+        
+        .signup-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        .signup-link a {
+            color: #ff3b5c;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter your username">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password">
+
+            <button type="submit">Login</button>
+        </form>
+        <div class="signup-link">
+            Don't have an account? <a href="#">Sign Up</a>
+        </div>
+    </div>
+</body>
+
+</html>

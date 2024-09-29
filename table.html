@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subject Entry Form</title>
+    <link rel="stylesheet" href="tablecs.css" />
+  </head>
+  <script></script>
+  <body>
+    <div class="container">
+      <table>
+        <h1>Subject Entry Form</h1>
+
+        <form class="subject-form" id="subjectForm">
+          <label for="faculty-name">Faculty Name:</label>
+          <input type="text" id="facultyName" name="faculty-name" placeholder="Enter facultyName"/><br /><br />
+
+          <label for="subject-name">Subject Name:</label>
+          <input type="text" id="subjectName" name="subject-name" placeholder="Enter subjectName"/><br /><br />
+
+          <label for="total-credit">Total Credit:</label>
+          <input
+            type="number"
+            id="totalCredits"
+            name="total-credit"
+            placeholder="Enter Credit"
+          /><br /><br />
+          
+        <label for="department">department</label>
+        <select id="dpartment">
+          <option value="SEM-0">Select Department</option>
+
+          <option value="mca">MCA</option>
+          <option value="BCA">BCA</option>
+          <option value="bcom">B.com</option>
+        </select>
+        <label for="sem">Sem:</label>
+        <select id="sem">
+          <option value="SEM-0">Select semester</option>
+
+          <option value="SEM-1">Sem-1</option>
+          <option value="SEM-2">Sem-2</option>
+          <option value="SEM-3">Sem-3</option>
+          <option value="SEM-4">Sem-4</option>
+          <option value="SEM-5">Sem-5</option>
+          <option value="SEM-6">Sem-6</option>
+        </select>
+        <label for="class">CLASS:</label>
+        <select id="class">
+          <option value="SEM-0">Select Class</option>
+
+          <option value="A">A</option>
+          <option value="B">B</option>
+        </select>
+
+
+          <!-- <label for="class-semester">Class-Semester:</label>
+          <input type="text" id="classSem" name="class-semester" /><br /><br /> -->
+
+          <!-- <label for="division">Division:</label>
+          <input type="text" id="division" name="division" /><br /><br /> -->
+
+          <button class="add-btn" type="submit">Add Subject</button>
+        </form>
+      </table>
+    </div>
+    <input type="text" id="p1" readonly></td>
+
+    <br />
+    <table
+      id="subjectTable"
+      class="subjectTable"
+      border="1"
+      cellspacing="0"
+      cellpadding="5"
+    >
+      <tr class="t_hading">
+        <th class="t">No.</th>
+        <th class="t">TIME</th>
+        <th class="t">MON</th>
+        <th class="t">TUE</th>
+        <th class="t">WED</th>
+        <th class="t">THUR</th>
+        <th class="t">FRI</th>
+        <th class="t">SAT</th>
+      </tr>
+
+      <tr class="tr_size">
+        <th rowspan="2" class="no">1.</th>
+        <td rowspan="2">8:30 TO 9:30</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="tr_size">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr class="tr_size">
+        <th rowspan="2" class="no">2.</th>
+        <td rowspan="2">9:30 TO 10:30</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="tr_size">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <th colspan="8" align="CENTER">BREAK</th>
+      </tr>
+
+      <tr class="tr_size">
+        <th rowspan="2" class="no">3.</th>
+        <td rowspan="2">11 TO 12</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="tr_size">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr class="tr_size">
+        <th rowspan="2" class="no">4.</th>
+        <td rowspan="2">12 TO 1</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr class="tr_size">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="8">
+          <button class="show-btn" id="show-btn">Show Table</button>
+        </td>
+      </tr>
+    </table>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+
+    <script src="table.js"></script>
+  </body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            width: 100rem;
+            background-image: linear-gradient(rgba(195, 198, 207, 0.937), rgba(63, 63, 167, 0.921)), url('image1.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            width: 100%;
+        }
+        
+        .header {
+            justify-content: space-between;
+        }
+        
+        nav {
+            display: flex;
+            padding: 2% 6%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        nav img {
+            width: 100%;
+            border-radius: 50%;
+        }
+        
+        .imglg {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            transition: 0.5s;
+            margin-left: -50px;
+        }
+        
+        imglg:hover {
+            box-shadow: 4px 4px 4px 22px green;
+        }
+        
+        .nav-links {
+            margin-top: -40px;
+        }
+        
+        .nav-links ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 8px 12px;
+            justify-content: right;
+            position: relative;
+        }
+        
+        .nav-links ul li::after {
+            content: '';
+            width: 0%;
+            height: 4px;
+            background-color: darkblue;
+            display: block;
+            margin: auto;
+            transition: 0.5s;
+        }
+        
+        .nav-links ul li:hover::after {
+            width: 100%;
+        }
+        
+        .nav-links ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+        
+        .nav-links ul li a:hover {
+            color: blue;
+            transition: 0.3s ease;
+        }
+        
+        .text-box {
+            text-align: center;
+            font-size: 50px;
+            color: rgb(73, 73, 148);
+            text-shadow: 4px 4px 4px rgba(241, 241, 242, 0.5);
+            margin-top: 20px;
+        }
+        
+        .text-box:hover {
+            text-shadow: 8px 8px 8px rgba(232, 232, 238, 0.5);
+            transition: 0.9s;
+        }
+        
+        p {
+            margin: 10px 0 40px;
+            font-size: 20px;
+            margin-bottom: 20%;
+            color: rgb(221, 221, 224);
+            line-height: 2;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            transition: 0.3s ease;
+            text-shadow: px 7px 7px white;
+        }
+        
+        .hero-btn {
+            margin: 20px;
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            border: 1px solid white;
+            padding: 12px 34px;
+            font-size: 15px;
+            background: transparent;
+            position: relative;
+            box-shadow: 2px 3px 20px rgba(241, 241, 242, 0.5);
+            cursor: pointer;
+            line-height: 10px;
+        }
+        
+        .hero-btn:hover {
+            border: 1px darkblue;
+            background: darkblue;
+            transition: 0.5s;
+            box-shadow: 0px 0px 20px rgba(243, 240, 241, 0.853);
+            transition: 1s;
+        }
+        
+        .hero-btn span {
+            font-size: 15px;
+        }
+        
+        .hero-btn span:hover {
+            font-size: 20px;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img class="imglg" src="shri.png"></a>
+
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="homepage.html">About</a></li>
+                    <li><a href="#">Admissions</a></li>
+                    <li><a href="#">Academics</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <section class="text">
+        <h1 class="text-box">Anand Commerce College</h1><br>
+        <br<br>
+            <p>Managed By, shri Ramkrishna Seva Mandal<br> Affilated to Sardar Patel University Vallabh Vishyanagar <br> NAAC Re-Accredited-"A" Grade<br><br>
+
+                <a href="login.html" class="hero-btn"><span>LOGIN</span></a>
+                <a href="about.html" class="hero-btn"><span>About ACC</span></a>
+            </p>
+    </section>
+
+</body>
+
+</html>

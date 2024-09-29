@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: linear-gradient(rgba(20, 26, 44, 0.7), rgba(52, 68, 119, 0.7)), url('image2.jpg.jpg');
+            background-size: cover;
+            align-items: center;
+            backdrop-filter: blur();
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .login-container {
+            background-color: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7));
+            backdrop-filter: blur(10px);
+            height: 500px;
+            width: 450px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(246, 244, 244, 0.5);
+            justify-content: center;
+            margin-left: 37%;
+            margin-top: 10%;
+            overflow: hidden;
+        }
+        
+        .login-container::before {
+            content: '';
+            position: absolute;
+            top: 170px;
+            right: 20px;
+            width: 40px;
+            padding-bottom: -200px;
+            margin-right: 640px;
+            height: 57%;
+            background-color: #8b2939;
+            transform: skewX(-13deg);
+            margin-bottom: 300px;
+            z-index: -7;
+        }
+        
+        h2 {
+            color: #fff;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        label {
+            color: #ccc;
+            display: block;
+            margin-bottom: 20px;
+            margin-left: 20px;
+        }
+        
+        input[type="text"],
+        input[type="password"] {
+            width: 70%;
+            padding: 12px;
+            margin-left: 40px;
+            border: none;
+            border-radius: 5px;
+            background-color: #2c2c2c;
+            color: #fff;
+            margin-bottom: 25px;
+        }
+        
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            outline: none;
+            box-shadow: 0 0 10px rgba(194, 190, 191, 0.914);
+        }
+        
+        button {
+            background-color: #ff052f;
+            color: #fff;
+            border: 2px white;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 60%;
+            margin-left: 70px;
+            padding: 10px 20px;
+            transition: background-color 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #ac445e;
+            border-color: 2px white;
+        }
+        
+        .signup-link {
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+        }
+        
+        .signup-link a {
+            color: #ff3b5c;
+            text-decoration: none;
+        }
+        
+        .username {
+            transition: 0.5s ease;
+        }
+        
+        .password {
+            transition: 0.5s ease;
+        }
+        
+        input:focus+.username,
+        input:valid+.username {
+            color: white;
+            height: 30px;
+            line-height: 30px;
+            transform: translate(-15px, -16px)scale(0.88);
+            z-index: inherit;
+        }
+        
+        span:hover {
+            color: lightblue;
+            transition: 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form>
+            <label for="username">Username</label>
+            <input type="text" class="username" placeholder="Enter your username">
+
+            <label for="password">Password</label>
+            <input type="password" class="password" placeholder="Enter your password"><br><br>
+            <a href="table.html">
+                <button type="button">Login</button>
+            </a>
+        </form>
+        <div class="signup-link">
+            Don't have an account? <a href="sign111.html"><span>Sign Up</span></a>
+        </div>
+    </div>
+</body>
+
+</html>
+</div>
+</div>
+</body>
+
+</html>
